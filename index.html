@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Leap Year Calculator</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,7 +11,38 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
+
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Find out if your birth year is a Leap Year!</h1>
+        <p>Enter in year below, push button.</p>
+      </div>
+
+      <form id="yourYear">
+        <div class="form-group">
+          <label>Input birth year:</label>
+          <input id="leapYear" type="text" name="name">
+        </div>
+
+        <button id="submit" class="btn btn-default btn-lg" type="submit">Submit</button>
+      </form>
+
+<!-- RESULTS -->
+      <div class="row">
+        <div class="col-sm-12 results">
+          <h2>You Are Leap Year Spawn!</h2>
+          <h3><span class="year"></span> is <span class="not"></span>a leap year.</h3>
+        </div>
+      </div>
+    </div>  <!-- /CONTAINER -->
+
+
+
+
+
+
+
 
   </body>
 </html>

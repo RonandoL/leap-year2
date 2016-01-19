@@ -24,8 +24,4 @@ describe('leapYear', function() {
     expect(leapYear(-45)).to.equal("input positive integer");
   });
 
-  it("it returns message prompting integer when user enters empty value", function(){
-    expect(leapYear("")).to.equal("Please just enter a number bitch!");
-  });
-
 });

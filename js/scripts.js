@@ -17,7 +17,16 @@ var leapYear = function(year) {
 // User Interface Logic
 $(document).ready(function() {
   $("form#yourYear").submit(function(event) {
-    ver year = parseInt($("input#leapYear"))
+    var year = parseInt($("input#leapYear").val());
+    var result = leapYear(year);
+
+    $(".year").text(year);
+
+    if (!result) {
+      $(".not").text("NOT");
+    } else {
+      $(".not").text("");
+    }
 
     $(".results").show();
 
